@@ -11,10 +11,33 @@
 nav {
   height: 9vh;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.8rem;
+}
+nav .right {
+  display: flex;
+  font-size: 13px;
+  color: rgb(38, 38, 38);
+  align-items: center;
+  gap: 1.5rem;
+}
+nav .right .logo img{
+  width: 8vw;
+}
+nav .left {
+  display: flex;
+  font-size: 14px;
+  color: rgb(38, 38, 38);
+  align-items: center;
+  gap: 1.5rem;
+}
+nav .left svg{
+  height: 1.4rem;
 }
 .card {
   width: 37vw;
-  /* border: 1px solid #000; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +67,6 @@ nav {
 }
 .card div a {
   width: 60%;
-  /* border: 1px solid #fff; */
   display: block;
   margin-top: 0.5rem;
   color: #fff;
@@ -66,6 +88,86 @@ section:first-child .card {
   top: 8%;
   left: 5%;
 }
+section:nth-child(2),
+section:nth-child(4) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section:nth-child(4) {
+  margin: 4rem 0 0 0;
+}
+section:nth-child(2) .row,
+section:nth-child(4) .row {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 4.6rem 0;
+}
+section:nth-child(4) .row {
+  margin: 0.5rem 0;
+}
+.CardBlock {
+  width: 23.5%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: 1px 1px 10px #00000048;
+}
+.CardBlock .img {
+  width: 100%;
+  height: 25vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background: url("./public/Content-Card-Copilot-Native-App-ROW.avif");
+}
+.img2 {
+  background: url("./public/gldn-XSS-CP-Xbox-Series-S-Evergreen.webp");
+}
+.img3 {
+  background: url("./public/gldn-XSX-CP-Xbox-Series-X.webp");
+}
+.img0 {
+  background: url("./public/gldn-CP-M365-Icons-Teams.avif");
+}
+.CardBlock h2 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+.CardBlock button {
+  background-color: #005cbc;
+  /* margin: 0 0 1.4rem 1.4rem; */
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 9px 13px;
+  font-weight: 600;
+  font-size: 16px;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.4rem;
+}
+.CardBlock .btn {
+  height: 10vh;
+}
+.CardBlock .para {
+  line-height: 1.5;
+}
+.CardBlock .content {
+  margin: 1.4rem;
+  display: flex;
+  height: auto;
+  gap: 0.8rem;
+  flex-direction: column;
+}
 section:nth-child(3) {
   height: 100vh;
   display: flex;
@@ -73,13 +175,11 @@ section:nth-child(3) {
   align-items: center;
 }
 section:nth-child(3) .card {
-  /* border: 1px solid red; */
   width: 48%;
   height: 100%;
 }
 section:nth-child(3) .card div {
   width: 61%;
-  /* border: 1px solid red; */
 }
 section:nth-child(3) .img {
   height: 91vh;
@@ -91,4 +191,46 @@ section:nth-child(3) .img {
 section:nth-child(3) .img p,
 section:nth-child(3) .img h2 {
   color: #fff;
+}
+.utils {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.utils .block {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.utils .block .icon img {
+  height: 2.7rem;
+}
+.utils .block .url a {
+  font-weight: 600;
+  color: #007cd1;
+  text-decoration: underline;
+}
+.For_business {
+  font-size: 29px;
+  width: 90%;
+  font-weight: 600;
+}
+footer {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.footer span img {
+  height: 2rem;
+  margin: 0.5rem;
 }
